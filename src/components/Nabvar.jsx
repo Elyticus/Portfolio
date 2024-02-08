@@ -70,7 +70,10 @@ export default function Navbar() {
             <a
               onClick={() => handleNavLinkClick(".footer")}
               className="nav-link"
-              href="#resume"
+              // eslint-disable-next-line react/prop-types
+              href="https://docs.google.com/document/d/1XwFZb0j5vxbF6gC519_3YZxKOW2cYDYA/edit?usp=sharing&ouid=116018117174124114573&rtpof=true&sd=true"
+              target="_blank"
+              rel="noreferrer"
             >
               Resume
             </a>

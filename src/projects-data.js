@@ -12,7 +12,7 @@ export default [
   },
 
   {
-    id: 3,
+    id: 2,
     title: "Password Generator",
     image: "/images/Password Generator.jpg",
     description:
@@ -24,7 +24,7 @@ export default [
   },
 
   {
-    id: 4,
+    id: 3,
     title: "Portfolio",
     image: "/images/portfolio.jpg",
     description: "This portfolio! The biggest flex.",
@@ -35,7 +35,7 @@ export default [
   },
 
   {
-    id: 2,
+    id: 4,
     title: "Coming Soon",
     image: "/images/Coming Soon.jpg",
     description: "",
