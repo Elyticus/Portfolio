@@ -386,6 +386,10 @@ body.navbar-clicked {
     margin-inline: 1em;
   }
 
+  .contact-details {
+    font-size: 0.6em;
+  }
+
   .slider-thumb-header::before {
     width: 350px;
     height: 350px;

@@ -23,7 +23,8 @@ export default function About() {
           <p>
             I am a self-taught learner with a passion for pushing the boundaries
             of the web. Digital art captivates me, and I aspire to excel in web
-            development and find the soft spot of technology.
+            development and find{" "}
+            <span className="green-text">the soft spot of technology</span>.
           </p>
         </div>
       </div>

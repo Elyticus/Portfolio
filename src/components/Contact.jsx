@@ -6,7 +6,9 @@ export default function Contact() {
         <p>Please reach out if you have any questions!</p>
         <p className="contact-details">
           Send me an email at{" "}
-          <span className="green-text bold">pirvulescu.catalin@gmail.com</span>{" "}
+          <span className="green-text bold">
+            pirvulescu.catalin0409@gmail.com
+          </span>{" "}
           or call me directly at{" "}
           <span className="green-text bold">+40 721 906 855</span>.
         </p>
