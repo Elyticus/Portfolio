@@ -1,29 +1,40 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-// eslint-disable-next-line react/prop-types
-export default function Navbar({ onNavbarClick }) {
+export default function Navbar() {
   const [isNavbarClicked, setIsNavbarClicked] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navbarClassName = `navbar navbar-expand-lg ${
-    isNavbarClicked ? "navbar-clicked" : ""
-  }`;
+    isSticky ? "sticky" : ""
+  } ${isNavbarClicked ? "navbar-clicked" : ""}`;
 
-  function handleClick() {
-    setIsNavbarClicked(!isNavbarClicked);
-    // Ensure onNavbarClick is a function before calling it
-    if (typeof onNavbarClick === "function") {
-      onNavbarClick(!isNavbarClicked);
+  const handleNavLinkClick = (selector) => {
+    const section = document.querySelector(selector);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setIsNavbarClicked(false); // Close navbar after clicking on a link
     }
-  }
+  };
 
   return (
     <nav className={navbarClassName}>
       <div className="container-fluid">
         <button
-          onClick={handleClick}
+          onClick={() => setIsNavbarClicked(!isNavbarClicked)}
           className="navbar-toggler"
           type="button"
           aria-label="Toggle navigation"
+          aria-expanded={isNavbarClicked}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -35,16 +46,32 @@ export default function Navbar({ onNavbarClick }) {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav">
-            <a className="nav-link" href="#">
+            <a
+              onClick={() => handleNavLinkClick("main")}
+              className="nav-link"
+              href="#projects"
+            >
               Projects
             </a>
-            <a className="nav-link" href="#">
+            <a
+              onClick={() => handleNavLinkClick(".about")}
+              className="nav-link"
+              href="#about"
+            >
               About Me
             </a>
-            <a className="nav-link" href="#">
+            <a
+              onClick={() => handleNavLinkClick(".contact")}
+              className="nav-link"
+              href="#contact"
+            >
               Contact
             </a>
-            <a className="nav-link" href="#">
+            <a
+              onClick={() => handleNavLinkClick(".footer")}
+              className="nav-link"
+              href="#resume"
+            >
               Resume
             </a>
           </div>

@@ -9,7 +9,7 @@ body {
   position: absolute;
   content: "";
   left: 8%;
-  top: 25%;
+  top: 75%;
   width: 450px;
   height: 450px;
   background: #121232;
@@ -23,6 +23,19 @@ body {
 
 .app-class {
   position: relative;
+}
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #111144;
+}
+
+.navbar-toggler-icon {
+  background-color: #01ffb7;
+  border-radius: 5px;
 }
 
 .slider-thumb-header::before {
@@ -130,7 +143,7 @@ body {
 }
 
 .navbar-expand-lg .navbar-nav {
-  padding: 1em;
+  padding: 0.2em;
   gap: 2em;
 }
 
@@ -231,6 +244,10 @@ body {
   margin: 5em auto;
 }
 
+.container-about {
+  padding: 5em 0 5em 0;
+}
+
 .about-text-section {
   width: 40%;
 }
@@ -263,6 +280,7 @@ body {
 
 .nav-link {
   color: whitesmoke !important;
+  cursor: pointer;
 }
 
 .nav-link:hover {
@@ -297,6 +315,17 @@ body {
   padding: 1em;
 }
 
+/* CSS file */
+body {
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
+}
+
+/* Define other styles as needed */
+
 @media all and (max-width: 992px) {
   .navbar-nav {
     height: 100vh;
@@ -309,8 +338,9 @@ body {
     font-weight: 600 !important;
   }
 
-  .navbar-clicked {
-    background-color: rgb(1, 255, 183);
+  .navbar-clicked,
+  .navbar.sticky {
+    background-color: #111144;
   }
 
   .intro {

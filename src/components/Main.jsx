@@ -8,7 +8,6 @@ export default function Main() {
   return (
     <main>
       <p className="proj green-text">Things I made:</p>
-
       <div className="project-section">
         <div className="project-display">{projects}</div>
       </div>
