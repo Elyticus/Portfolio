@@ -21,10 +21,9 @@ export default function About() {
           </p>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quos,
-            modi, doloremque sequi ipsam dolor sapiente ullam beatae inventore
-            adipisci minus provident quaerat, dicta animi consectetur odit alias
-            velit nam!
+            I am a self-taught learner with a passion for pushing the boundaries
+            of the web. Digital art captivates me, and I aspire to excel in web
+            development, striving for excellence.
           </p>
         </div>
       </div>
