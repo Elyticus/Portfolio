@@ -23,7 +23,7 @@ export default function About() {
           <p>
             I am a self-taught learner with a passion for pushing the boundaries
             of the web. Digital art captivates me, and I aspire to excel in web
-            development, striving for excellence.
+            development and find the soft spot of technology.
           </p>
         </div>
       </div>
