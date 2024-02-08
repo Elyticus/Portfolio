@@ -315,16 +315,23 @@ body {
   padding: 1em;
 }
 
-/* CSS file */
+.resume {
+  background-color: #ff827e !important;
+  padding-inline: 2em !important;
+  border-radius: 7px;
+}
+
+.resume:hover {
+  color: #000022 !important;
+}
+
 body {
-  scrollbar-width: none; /* Firefox */
+  overflow: auto; /* Default overflow */
 }
 
-body::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
+body.navbar-clicked {
+  overflow: hidden; /* Hide scrollbar when navbar-clicked is present */
 }
-
-/* Define other styles as needed */
 
 @media all and (max-width: 992px) {
   .navbar-nav {

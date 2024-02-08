@@ -18,6 +18,14 @@ export default function Navbar() {
     isSticky ? "sticky" : ""
   } ${isNavbarClicked ? "navbar-clicked" : ""}`;
 
+  // Function to toggle scrollbar
+  function toggleScrollbar() {
+    document.body.style.overflow = isNavbarClicked ? "hidden" : "auto";
+  }
+
+  // Call the function to toggle scrollbar
+  toggleScrollbar();
+
   const handleNavLinkClick = (selector) => {
     const section = document.querySelector(selector);
     if (section) {
@@ -69,7 +77,7 @@ export default function Navbar() {
             </a>
             <a
               onClick={() => handleNavLinkClick(".footer")}
-              className="nav-link"
+              className="nav-link resume"
               // eslint-disable-next-line react/prop-types
               href="https://drive.google.com/file/d/1dWzYDpbiIXD_lwSstTIrPAfyQR1gDXOi/view?usp=sharing"
               target="_blank"
