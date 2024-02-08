@@ -333,6 +333,10 @@ body.navbar-clicked {
   overflow: hidden; /* Hide scrollbar when navbar-clicked is present */
 }
 
+.whitespace {
+  display: none;
+}
+
 @media all and (max-width: 992px) {
   .navbar-nav {
     height: 100vh;
@@ -386,8 +390,8 @@ body.navbar-clicked {
     margin-inline: 1em;
   }
 
-  .contact-details {
-    font-size: 0.6em;
+  .whitespace {
+    display: block;
   }
 
   .slider-thumb-header::before {
