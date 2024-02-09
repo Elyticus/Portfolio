@@ -5,7 +5,7 @@ export default function Contact() {
         <h1>Contact</h1>
         <p>Please reach out if you have any questions!</p>
         <p className="contact-details">
-          Send me an email at{" "}
+          Send me an email at:{" "}
           <span className="green-text bold">
             pirvulescu.catalin0409@gmail.com
           </span>{" "}

@@ -3,13 +3,18 @@ body {
   font-size: 1.3em !important;
   color: whitesmoke !important;
   background-color: #000022 !important;
+  overflow: auto; /* Default overflow */
+}
+
+body.navbar-clicked {
+  overflow: hidden; /* Hide scrollbar when navbar-clicked is present */
 }
 
 .slider-thumb::before {
   position: absolute;
   content: "";
   left: 8%;
-  top: 75%;
+  top: 25%;
   width: 450px;
   height: 450px;
   background: #121232;
@@ -325,12 +330,10 @@ body {
   color: #000022 !important;
 }
 
-body {
-  overflow: auto; /* Default overflow */
-}
-
-body.navbar-clicked {
-  overflow: hidden; /* Hide scrollbar when navbar-clicked is present */
+.navbar-clicked,
+.navbar.sticky {
+  background-color: #111144;
+  transition: 0.5s ease-in-out;
 }
 
 .whitespace {
@@ -346,11 +349,6 @@ body.navbar-clicked {
   .nav-link {
     font-size: 2em !important;
     font-weight: 600 !important;
-  }
-
-  .navbar-clicked,
-  .navbar.sticky {
-    background-color: #111144;
   }
 
   .intro {
