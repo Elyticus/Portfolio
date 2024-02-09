@@ -10,7 +10,7 @@ export default function Contact() {
             pirvulescu.catalin0409@gmail.com
           </span>{" "}
           or call me directly at: <br className="whitespace" />
-          <span className="green-text bold">+40 721 906 855</span>.
+          <span className="green-text bold">+40 721 906 855</span>
         </p>
         <p>I&apos;m looking forward to hearing from you!</p>
       </div>

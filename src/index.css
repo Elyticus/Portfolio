@@ -340,7 +340,6 @@ body.navbar-clicked {
 @media all and (max-width: 992px) {
   .navbar-nav {
     height: 100vh;
-    justify-content: center;
     align-items: center;
   }
 
@@ -365,8 +364,16 @@ body.navbar-clicked {
     margin-bottom: 1em;
   }
 
+  .header-title {
+    font-size: 1.3em;
+  }
+
   .project-section {
     flex-direction: column;
+  }
+
+  .project-btn {
+    margin-top: 3em;
   }
 
   .about {

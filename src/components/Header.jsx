@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <div className="header slider-thumb-header">
       <section className="intro">
-        <h1>Hello, I&apos;m Catalin 👋🏻</h1>
+        <h1 className="header-title">Hello, I&apos;m Catalin 👋🏻</h1>
         <p>
           I&apos;m currently on a mission to reach the pinnacle of{" "}
           <span className="green-text">Front-End Web Development</span>. I am

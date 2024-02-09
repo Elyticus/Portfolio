@@ -56,7 +56,7 @@ export default function Navbar() {
           <div className="navbar-nav">
             <a
               onClick={() => handleNavLinkClick("main")}
-              className="nav-link"
+              className="nav-link project-btn"
               href="#projects"
             >
               Projects
