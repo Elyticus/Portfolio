@@ -1,4 +1,4 @@
-import projectsData from "../projects-data";
+import projectsData from "../../projects-data";
 import Projects from "./Projects";
 
 export default function Main() {

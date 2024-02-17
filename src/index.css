@@ -30,11 +30,10 @@ body.navbar-clicked {
   position: relative;
 }
 
-.navbar.sticky {
+.sticky-top {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
   background-color: #111144;
 }
 
@@ -202,7 +201,7 @@ body.navbar-clicked {
 }
 
 .project-image {
-  width: 270px;
+  width: 290px;
   height: 250px;
   border-radius: 10px;
   border: none;
@@ -250,7 +249,7 @@ body.navbar-clicked {
 }
 
 .container-about {
-  padding: 5em 0 5em 0;
+  padding: 2em 0 5em 0;
 }
 
 .about-text-section {
@@ -267,11 +266,50 @@ body.navbar-clicked {
 }
 
 .toolkit {
+  position: relative;
   text-align: center;
+}
+
+.toolkit-info {
+  position: absolute;
+  top: -30px;
+}
+
+.circle-info {
+  cursor: pointer;
+  width: 20px;
+}
+
+.close-btn {
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #ff827e;
+}
+
+.info-text {
+  position: fixed;
+  background-color: #0606df;
+  background-size: cover;
+  top: 50%;
+  left: 25%;
+  font-size: 0.5em;
+  display: flex;
+  gap: 1em;
+  padding: 1em;
+  border-radius: 0.5em;
+  opacity: 100%;
+  z-index: 5;
 }
 
 .tool-logo {
   width: 50px;
+}
+
+.toolkit-name {
+  font-size: 0.6em;
+  text-align: center;
 }
 
 .tools-container {
@@ -280,7 +318,15 @@ body.navbar-clicked {
   justify-content: center;
   align-items: center;
   margin: 2em 2em;
-  gap: 1em;
+  gap: 2em;
+}
+
+.tools-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-link {
@@ -331,7 +377,7 @@ body.navbar-clicked {
 }
 
 .navbar-clicked,
-.navbar.sticky {
+.sticky-top {
   background-color: #111144;
   transition: 0.5s ease-in-out;
 }
@@ -344,6 +390,10 @@ body.navbar-clicked {
   .navbar-nav {
     height: 100vh;
     align-items: center;
+  }
+
+  .navbar {
+    background-color: #111144;
   }
 
   .nav-link {
@@ -368,6 +418,10 @@ body.navbar-clicked {
 
   .project-section {
     flex-direction: column;
+  }
+
+  .project-image {
+    width: 330px;
   }
 
   .project-btn {
@@ -414,5 +468,10 @@ body.navbar-clicked {
     height: 100px;
     top: 67%;
     left: 60%;
+  }
+
+  .info-text {
+    left: 10%;
+    right: 10%;
   }
 }

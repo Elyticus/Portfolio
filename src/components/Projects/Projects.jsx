@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 export default function Projects(props) {
   return (
-    <div>
+    <div className="project-wrapper">
       {props.id === props.id && (
         <div className="project">
           <img className="project-image" src={props.image} alt={props.title} />

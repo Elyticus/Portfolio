@@ -1,9 +1,9 @@
-import Navbar from "./components/Nabvar";
-import Header from "./components/Header";
-import Main from "./components/Main";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar/Nabvar";
+import Header from "./components/Header/Header";
+import Main from "./components/Projects/Main";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 import { useState } from "react";
 
 export default function App() {
@@ -14,7 +14,7 @@ export default function App() {
   }
 
   return (
-    <div className="app-class">
+    <div className={`app-class`}>
       <Navbar onNavbarClick={handleNavbarClick} />
       {isHeaderVisible && <Header />}
       {isHeaderVisible && <Main />}
