@@ -43,17 +43,22 @@ export default function About() {
           <span className="toolkit-info">
             {setIcon && (
               <span className="info-text">
-                <FontAwesomeIcon
-                  className="circle-info-inside"
-                  icon={faCircleInfo}
-                />
-                Your company uses a different stack? Worry not! I love to learn.
-                <span>
-                  <FontAwesomeIcon
-                    onClick={handleIconClick}
-                    className="close-btn"
-                    icon={faCircleXmark}
-                  />
+                <span className="info-message">
+                  <span className="subinfo-icon">
+                    <FontAwesomeIcon
+                      className="circle-info-inside"
+                      icon={faCircleInfo}
+                    />
+                  </span>
+                  Your company uses a different stack? No worries! I love to
+                  learn.
+                  <span>
+                    <FontAwesomeIcon
+                      onClick={handleIconClick}
+                      className="close-btn"
+                      icon={faCircleXmark}
+                    />
+                  </span>
                 </span>
               </span>
             )}
