@@ -480,7 +480,14 @@ body.navbar-clicked {
   }
 
   .info-text {
-    left: 10%;
-    right: 10%;
+    left: 0%;
+    right: 0%;
+  }
+
+  .info-message {
+    margin: 0 auto;
+    width: auto;
+    right: 5%;
+    left: 5%;
   }
 }
