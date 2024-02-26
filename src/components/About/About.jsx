@@ -22,7 +22,9 @@ export default function About() {
         <div className="about-text-section">
           <h1>About Me 👨🏻‍💻</h1>
           <p>
-            Hello again! Thank you for scrolling this far. I recently graduated{" "}
+            Hello again! Thank you for scrolling this far. I graduated{" "}
+            <span className="green-text">IT School </span>
+            and completed the{" "}
             <span className="green-text">
               Scrimba Front End Developer Career Path
             </span>
