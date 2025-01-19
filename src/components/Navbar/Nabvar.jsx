@@ -13,7 +13,7 @@ export default function Navbar() {
   useEffect(() => {
     toggleScrollbar();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isNavbarClicked]); // Only recalculate when isNavbarClicked changes
+  }, [isNavbarClicked]);
 
   // Function to handle scrolling and stickiness
   useEffect(() => {
