@@ -88,7 +88,7 @@ export default function Navbar() {
               target="_blank"
               rel="noreferrer"
             >
-              CV
+              Resume
             </a>
           </div>
         </div>
