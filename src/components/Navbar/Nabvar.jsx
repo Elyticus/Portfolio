@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 
+const RESUME_URL =
+  "https://drive.google.com/file/d/1uYymKRF6ncB9bPYxl-al4bSxG3OiYKxm/view?usp=sharing";
+
 export default function Navbar() {
   const [isNavbarClicked, setIsNavbarClicked] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false); // Track scroll position
@@ -81,7 +84,7 @@ export default function Navbar() {
               onClick={() => handleNavLinkClick(".footer")}
               className="nav-link resume"
               // eslint-disable-next-line react/prop-types
-              href="https://drive.google.com/file/d/1uYymKRF6ncB9bPYxl-al4bSxG3OiYKxm/view?usp=sharing"
+              href={RESUME_URL}
               target="_blank"
               rel="noreferrer"
             >
