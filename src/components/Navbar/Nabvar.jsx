@@ -78,12 +78,11 @@ export default function Navbar() {
               Contact
             </a>
             <a
-              onClick={() => handleNavLinkClick(".footer")}
               className="nav-link resume"
-              // eslint-disable-next-line react/prop-types
               href="https://drive.google.com/file/d/1uYymKRF6ncB9bPYxl-al4bSxG3OiYKxm/view"
               target="_blank"
               rel="noreferrer"
+              aria-label="Download my resume"
             >
               Resume
             </a>
