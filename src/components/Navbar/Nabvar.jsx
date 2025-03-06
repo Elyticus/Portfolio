@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 const RESUME_URL =
-  "https://drive.google.com/file/d/17jmSV8hR7bnqPVeBXQpG-L9u8w_QUaht/view?usp=sharing";
+  "https://drive.google.com/file/d/1TmumGgRcG-V73H3hMt4ELQqHoycp5HdB/view?usp=sharing";
 
 export default function Navbar() {
   const [isNavbarClicked, setIsNavbarClicked] = useState(false);
