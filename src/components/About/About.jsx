@@ -40,7 +40,7 @@ export default function About() {
         </div>
       </div>
       <div className="toolkit">
-        <h1 className="">
+        <h1>
           My Toolkit 💻{" "}
           <span className="toolkit-info">
             {setIcon && (
