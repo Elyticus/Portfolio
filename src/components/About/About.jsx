@@ -2,17 +2,18 @@ import toolkitData from "../../../toolkit-data";
 import Tool from "./Tools";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleInfo, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 export default function About() {
-  const [setIcon, isSetIcon] = useState(false);
+  const [isInfoVisible, setIsInfoVisible] = useState(false);
 
-  const tools = toolkitData.map((tool) => {
-    return <Tool key={tool.id} {...tool} />;
-  });
+  const tools = useMemo(
+    () => toolkitData.map((tool) => <Tool key={tool.id} {...tool} />),
+    []
+  );
 
   function handleIconClick() {
-    isSetIcon(!setIcon);
+    setIsInfoVisible((prev) => !prev);
   }
 
   return (
@@ -43,7 +44,7 @@ export default function About() {
         <h1>
           My Toolkit 💻{" "}
           <span className="toolkit-info">
-            {setIcon && (
+            {isInfoVisible && (
               <span className="info-text">
                 <span className="info-message">
                   <span className="subinfo-icon">

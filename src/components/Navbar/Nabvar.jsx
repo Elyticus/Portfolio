@@ -1,21 +1,18 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const RESUME_URL =
   "https://drive.google.com/file/d/1TmumGgRcG-V73H3hMt4ELQqHoycp5HdB/view?usp=sharing";
 
 export default function Navbar() {
   const [isNavbarClicked, setIsNavbarClicked] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false); // Track scroll position
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  // Function to toggle scrollbar
-  function toggleScrollbar() {
-    document.body.style.overflow = isNavbarClicked ? "hidden" : "auto";
-  }
-
-  // Call the function to toggle scrollbar
   useEffect(() => {
-    toggleScrollbar();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    document.body.style.overflow = isNavbarClicked ? "hidden" : "auto";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
   }, [isNavbarClicked]);
 
   // Function to handle scrolling and stickiness
